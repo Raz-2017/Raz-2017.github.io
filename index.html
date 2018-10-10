@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="challengeApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Orange - Challenge</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/dist/css/bootstrap.min.css?1.1.1">
+    <link rel="stylesheet" type="text/css" href="vendors/angucomplete-alt/angucomplete-alt.css?1.1.1">
+    <link rel="stylesheet" type="text/css" href="vendors/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/ng-dialog/css/ngDialog-theme-default.min.css">
+
+    <link href="css/reset.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/structure.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/header.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/footer.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/signin.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/titles.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/texts.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/listes.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/separators.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/messages.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/buttons.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/tables.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/pagination.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/stepped_process.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/tab_panel.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/accordeon.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/popup.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/application.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/960_24_col.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/oft-layout.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/poesa.css?1.1.1" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container_24 oft-global">
+
+    <header-challenge></header-challenge>
+    <menu-challenge></menu-challenge>
+    <div id="main" class="grid_24">
+        <title-challenge></title-challenge>
+        <message-challenge></message-challenge>
+        <div id="content" ng-view></div>
+    </div>
+    <footer-challenge></footer-challenge>
+</div>
+
+    <script src="vendors/angular/angular.min.js?1.1.1"></script>
+    <script src="vendors/angular-route/angular-route.min.js?1.1.1"></script>
+    <script src="vendors/angular-translate/angular-translate.min.js?1.1.1"></script>
+    <script src="vendors/angular-translate-loader-partial/angular-translate-loader-partial.min.js?1.1.1"></script>
+    <script src="vendors/angular-confirm-modal/angular-confirm.min.js?1.1.1"></script>
+    <script src="vendors/angular-dynamic-locale/tmhDynamicLocale.min.js?1.1.1"></script>
+
+    <script src="vendors/jquery/dist/jquery.min.js?1.1.1"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js?1.1.1"></script>
+    <script src="vendors/angular-bootstrap/ui-bootstrap-tpls.min.js?1.1.1"></script>
+
+    <script src="vendors/file-saver.js/FileSaver.js?1.1.1"></script>
+    <script src="vendors/blob-polyfill/Blob.js?1.1.1"></script>
+    <script src="vendors/angular-file-saver/dist/angular-file-saver.min.js?1.1.1"></script>
+
+    <script src="vendors/ng-file-upload/ng-file-upload-shim.min.js"></script>
+    <script src="vendors/ng-file-upload/ng-file-upload.min.js"></script>
+
+    <script src="vendors/angucomplete-alt/dist/angucomplete-alt.min.js"></script>
+
+    <script src="vendors/ng-dialog/js/ngDialog.min.js"></script>
+
+    <script src="angular/app.module.js?1.1.1"></script>
+    <script src="angular/app.constant.js?1.1.1"></script>
+    <script src="angular/app.routing.js?1.1.1"></script>
+    <script src="angular/app.translate.js?1.1.1"></script>
+
+    <script src="angular/technical/technical.interceptor.js?1.1.1"></script>
+    <script src="angular/technical/technical.filter.js?1.1.1"></script>
+
+    <script src="angular/home/home.controller.js?1.1.1"></script>
+
+    <script src="angular/login/login.interceptor.js?1.1.1"></script>
+    <script src="angular/login/login.service.js?1.1.1"></script>
+    <script src="angular/login/login.controller.js?1.1.1"></script>
+
+    <script src="angular/button/button.component.js?1.1.1"></script>
+    <script src="angular/message/message.component.js?1.1.1"></script>
+    <script src="angular/message/error.interceptor.js?1.1.1"></script>
+
+    <script src="angular/menu/menu.component.js?1.1.1"></script>
+    <script src="angular/header/header.component.js?1.1.1"></script>
+    <script src="angular/footer/footer.component.js?1.1.1"></script>
+    <script src="angular/title/title.component.js?1.1.1"></script>
+    <script src="angular/table/table.component.js?1.1.1"></script>
+
+    <script src="angular/admin-country/country.controller.js?1.1.1"></script>
+    <script src="angular/admin-country/country.service.js?1.1.1"></script>
+
+    <script src="angular/admin-user/user.controller.js?1.1.1"></script>
+    <script src="angular/admin-user/user.service.js?1.1.1"></script>
+    <script src="angular/admin-user/create-user.component.js?1.1.1"></script>
+
+    <script src="angular/admin-dossier/admin-dossier.controller.js?1.1.1"></script>
+    <script src="angular/admin-dossier-json/admin-dossier-json.controller.js?1.1.1"></script>
+    <script src="angular/admin-concours/admin-concours.controller.js?1.1.1"></script>
+    <script src="angular/admin-concours/list-user-role.component.js?1.1.1"></script>
+    <script src="angular/admin-concours-interview/admin-concours-interview.controller.js?1.1.1"></script>
+    <script src="angular/admin-concours-question/admin-concours-question.controller.js?1.1.1"></script>
+    <script src="angular/concours/list/list.controller.js?1.1.1"></script>
+    <script src="angular/concours/single/single.controller.js?1.1.1"></script>
+    <script src="angular/concours/concours.service.js?1.1.1"></script>
+
+    <script src="angular/dossier/list/list.controller.js?1.1.1"></script>
+    <script src="angular/dossier/single/single.controller.js?1.1.1"></script>
+    <script src="angular/dossier/dossier.service.js?1.1.1"></script>
+
+    <script src="angular/account/account.controller.js?1.1.1"></script>
+    <script src="angular/account/account.service.js?1.1.1"></script>
+
+    <script src="angular/interview/single/single.controller.js?1.1.1"></script>
+    <script src="angular/interview/interview.service.js?1.1.1"></script>
+    <script src="angular/admin-interview/admin-interview.controller.js?1.1.1"></script>
+
+    <script src="angular/admin-question/admin-question.controller.js?1.1.1"></script>
+
+    <script src="angular/notation/single/single.controller.js?1.1.1"></script>
+    <script src="angular/notation/notation.service.js?1.1.1"></script>
+    <script src="angular/admin-grille/admin-grille.controller.js?1.1.1"></script>
+    <script src="angular/admin-critere/admin-critere.controller.js?1.1.1"></script>
+
+    <script src="angular/concours-grille/list/list.controller.js?1.1.1"></script>
+    <script src="angular/concours-grille/single/single.controller.js?1.1.1"></script>
+    <script src="angular/concours-grille/concours-grille.service.js?1.1.1"></script>
+
+    <script src="angular/concours-evaluateur/list/list.controller.js?1.1.1"></script>
+    <script src="angular/concours-evaluateur/concours-evaluateur.service.js?1.1.1"></script>
+
+    <script src="angular/concours-remind/concours-remind.controller.js?1.1.1"></script>
+    <script src="angular/concours-remind/concours-remind.service.js?1.1.1"></script>
+
+    <script src="angular/concours-interviewer/list/list.controller.js?1.1.1"></script>
+    <script src="angular/concours-interviewer/concours-interviewer.service.js?1.1.1"></script>
+
+    <script src="angular/stat/stat.controller.js?1.1.1"></script>
+    <script src="angular/stat/stat.service.js?1.1.1"></script>
+
+    <script>
+        angular.module('challengeApp').constant('appVersion', '1.1.1');
+    </script>
+</body>
+
+</html>
